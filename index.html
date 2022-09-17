@@ -8,8 +8,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <style>
-        h1 {
-            color: red;
+        * {
+            margin: 0;
+            padding: 0;
         }
 
         .bd-placeholder-img {
@@ -62,10 +63,20 @@
             white-space: nowrap;
             -webkit-overflow-scrolling: touch;
         }
+
+        .navbar-more {
+            width: 100vw;
+        }
+
+        .mine-img {
+            border-radius: 999px;
+            box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
+        }
     </style>
 </head>
 <body class="h-100 text-bg-dark">
-<nav class="navbar navbar-expand-md navbar-brand bg-light mb-4">
+<!--头部导航栏-->
+<nav class="navbar navbar-expand-md navbar-brand bg-light mb-4 navbar-more">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">My home</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -88,12 +99,25 @@
                 </li>
             </ul>
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <input class="form-control me-2" type="search" placeholder="与我相关" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">搜索</button>
             </form>
         </div>
     </div>
 </nav>
+
+<!--个人信息-->
+<div class="px-4 py-5 my-5 text-center bg-light">
+    <img class="d-block mx-auto mb-4 mine-img" width="120" height="120"
+            src="./images/100098376_p0_master1200.jpg" alt="头像">
+    <h1 class="display-5 fw-bold" style="color: black">乐浦</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+            我的名字叫乐浦，今年22岁，家住椟王汀风起街33号，工作是在连锁商店当代理店长，没有不良嗜好，
+            我的生活很规律每天八点之前必须回到家，在家里运动一个小时然后喝一杯热牛奶，
+        </p>
+    </div>
+</div>
 
 <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
